@@ -49,6 +49,12 @@
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
+                    <div class="social-icons">
+                        <a href="#" class="facebook-icon"><span>Facebook</span></a>
+                        <a href="#" class="twitter-icon"><span>Twitter</span></a>
+                        <a href="#" class="instagram-icon"><span>Instagram</span></a>
+                    </div>
                     
                     <!-- <nav>
                         
@@ -188,16 +194,20 @@
                     <div class="col-12 col-md-7">
                         <div class="welcome-intro">
                             <h1>Exclusive Deal</h1>
-                            <h3 style="color: #442d79; font-size: 30px;">$36/month Unlimited Canada-Wide Calling</h3>
+                            <h3 style="color: #442d79;">$36/month Unlimited Canada-Wide Calling</h3>
                             <p style="color: black; font-size: 16px;">Stay connected with the latest technology and features with Boltwireless Telus smartphones. Choose from a wide selection of top brands and models with flexible plans and exceptional customer support.</p>
                             <img src="assets/img/welcome/offer.png" alt="">
+                      
+
                             <a href="#getstart1" class="btn" id="tt">Get this Deal Now!</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
                         <!-- Welcome Thumb -->
-                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" style="margin-top: -40px;">
+                            <img src="assets/img/welcome/free2.png" alt="" width="200px">
                             <img src="assets/img/welcome/apple.png" alt="">
+                           
                         </div>
                     </div>
                 </div>
@@ -459,10 +469,11 @@
                             <b id="contact-form" method="POST" action="https://theme-land.com/sapp/demo/assets/php/mail.php">
                                 <div class="row g-3">
                                     <div class="col">
-                                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                      <input type="text" id="name" class="form-control" name="name" placeholder="First name" aria-label="First name" required="required">
+                                      
                                     </div>
                                     <div class="col">
-                                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                      <input type="text" id="name" class="form-control" name="name" placeholder="Last name" aria-label="Last name" required="required">
                                     </div>
 
                                     
@@ -470,17 +481,17 @@
 
                                   <div class="row g-3">
                                     <div class="col">
-                                    <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                                    <input type="email" id="email" class="form-control" name="email" placeholder="Email Address" aria-label="Email Address" required="required">
                                     </div><br>
                                     <div class="col">
-                                      <input type="number" class="form-control" placeholder="Phone no" aria-label="Phone no">
+                                      <input type="number" id="phone" class="form-control" name="phone" placeholder="Phone no" aria-label="Phone no" required="required">
                                     </div>
 
                                     
                                   </div><br>
 
                                   <div class="col">
-                                  <select class="form-select form-select-lg mb-3 form-control" aria-label="Large select example">
+                                  <select id="select" name="select" class="form-select form-select-lg mb-3 form-control" aria-label="Large select example" required="required">
                                     <option selected>Current Provider</option>
                                     <option value="1">Koodo</option>
                                     <option value="2">Other</option>
@@ -488,21 +499,22 @@
                                   </select>
 
                                 </div>
+
                                 
                                 <div class="col">
                                 <label style="font-weight: 400; margin-bottom: 0.5rem;
                                 display: flow;">Preferred Contact Method:</label>
                                 <div class="form-check form-check-inline" style="font-weight: 400">
-                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1" required="required">
                                     <label class="form-check-label" for="inlineCheckbox1">Email</label>
                                   </div>
                                   <div class="form-check form-check-inline" style="font-weight: 400">
-                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2" required="required">
                                     <label class="form-check-label" for="inlineCheckbox2">Phone Call</label>
                                   </div>
 
                                   <div class="form-check form-check-inline" style="font-weight: 400">
-                                    <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" required="required">
                                     <label class="form-check-label" for="inlineCheckbox3">Text Message</label>
                                   </div>
 
