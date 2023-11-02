@@ -989,6 +989,7 @@ img {
     border-radius: 0;
     z-index: 1;
     display: inline-block;
+    display: none;
   }
   .navbar .navbar-toggler .navbar-toggler-icon {
     position: absolute;
